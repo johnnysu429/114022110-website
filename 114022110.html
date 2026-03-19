@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>個人履歷｜蘇祥霖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --main-color: #2563eb;
+            --bg-color: #f8fafc;
+            --card-color: #ffffff;
+            --text-color: #1f2937;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: "Segoe UI", "Noto Sans TC", sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--main-color), #1e40af);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin: 8px 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: var(--card-color);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        section h2 {
+            margin-top: 0;
+            color: var(--main-color);
+            border-left: 5px solid var(--main-color);
+            padding-left: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .skill {
+            margin-bottom: 15px;
+        }
+
+        .skill span {
+            font-weight: bold;
+        }
+
+        .progress-bar {
+            background-color: #e5e7eb;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+
+        .progress {
+            height: 12px;
+            width: 0;
+            background-color: var(--main-color);
+            border-radius: 20px;
+            transition: width 1.5s ease;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>蘇祥霖</h1>
+    <p>亞洲大學學生｜個人履歷</p>
+</header>
+
+<main>
+
+    <section>
+        <h2>基本資料</h2>
+        <div class="info-grid">
+            <div>🎓 學校：亞洲大學</div>
+            <div>🆔 學號：AU114022110</div>
+            <div>📧 Email：yourmail@example.com</div>
+            <div>📍 居住地：台中市</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>自我介紹</h2>
+        <p>
+            我是亞洲大學在學學生，對於資訊科技與實務應用充滿興趣。
