@@ -6,85 +6,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    :root {
-      --main-color: #2563eb;
-      --bg-color: #f1f5f9;
-      --card-color: #ffffff;
-      --text-color: #1f2937;
-    }
-
-    * {
-      box-sizing: border-box;
-      font-family: "Segoe UI", "Noto Sans TC", sans-serif;
-    }
-
     body {
       margin: 0;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      line-height: 1.7;
+      font-family: "Segoe UI", "Noto Sans TC", sans-serif;
+      background: #2563eb;
+      color: #1f2937;
     }
 
     header {
-      background: linear-gradient(135deg, #2563eb, #1e40af);
-      color: white;
       text-align: center;
-      padding: 50px 20px 40px;
+      padding: 40px 20px;
+      color: white;
     }
 
+    /* ✅ 個人照片 */
     .profile-photo {
-      width: 150px;
-      height: 150px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #ffffff;
+      border: 4px solid white;
       margin-bottom: 15px;
-    }
-
-    header h1 {
-      margin: 10px 0 5px;
-      font-size: 2.2rem;
-    }
-
-    header p {
-      margin: 0;
-      font-size: 1.1rem;
-      opacity: 0.9;
     }
 
     main {
       max-width: 900px;
-      margin: 30px auto;
+      margin: 0 auto 40px;
       padding: 0 20px;
     }
 
     section {
-      background-color: var(--card-color);
+      background: white;
       padding: 25px;
       border-radius: 14px;
       margin-bottom: 25px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     }
 
-    section h2 {
+    h2 {
+      color: #2563eb;
       margin-top: 0;
-      color: var(--main-color);
-      border-left: 6px solid var(--main-color);
-      padding-left: 12px;
     }
 
-    .info-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
+    .info p {
+      margin: 8px 0;
       font-size: 1.05rem;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
-      color: #64748b;
+      color: #c7d2fe;
       font-size: 0.9rem;
+      padding-bottom: 20px;
     }
   </style>
 </head>
@@ -92,35 +64,31 @@
 <body>
 
 <header>
-  <!-- 使用相對路徑，GitHub Pages 穩定 -->
+  <!-- ✅ 只留這一張照片 -->
   <img src="./images/profile.jpg" alt="個人照片" class="profile</header>
 
 <main>
 
-  <section>
-    <h2>基本資料</h2>
-    <div class="info-grid">
-      <div>🪪 姓名：蘇祥霖</div>  
-      <div>🎓 學校：亞洲大學</div>
-      <div>🆔 學號：AU114022110</div>
-      <div>📧 Email：johnnysu429@gmail.com</div>
-      <div>📍 居住地：新北市</div>
-    </div>
+  <section class="info">
+    <p>🎓 學校：亞洲大學</p>
+    <p>🆔 學號：AU114022110</p>
+    <p>📧 Email：johnnysu429@gmail.com</p>
+    <p>📍 居住地：新北市</p>
   </section>
 
   <section>
     <h2>自我介紹</h2>
     <p>
-      我是亞洲大學在學學生，對資訊科技與網頁設計有濃厚興趣。
-      目前正在學習 HTML 與 CSS，透過實作方式加深對前端技術的理解。
-      希望未來能持續精進技能，累積實務經驗，培養獨立解決問題的能力。
+      我是亞洲大學在學學生，對資訊科技與網頁設計有興趣。
+      目前學習 HTML 與 CSS，透過實作方式累積經驗，
+      希望未來能持續精進技術能力，培養解決問題的能力。
     </p>
   </section>
 
 </main>
 
 <footer>
-  © 2026 個人履歷網站｜所有權保留
+  © 2026 蘇祥霖｜個人履歷網站
 </footer>
 
 </body>
