@@ -13,70 +13,74 @@
 
     body {
       margin: 0;
-      background-color: #f4f6fb;
+      background-color: #f5f7fb;
       color: #1f2937;
       line-height: 1.7;
     }
 
     /* ===== Header ===== */
     header {
-      background: linear-gradient(135deg, #2563eb, #1e40af);
+      background-color: #2563eb;
       color: white;
-      padding: 40px 20px 30px;
-      text-align: center;
+      padding: 30px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
     }
 
+    /* ✅ 非常小的圓形照片 */
     .avatar {
-      width: 120px;
-      height: 120px;
+      width: 64px;
+      height: 64px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid white;
-      margin-bottom: 15px;
+      border: 2px solid white;
+      flex-shrink: 0;
     }
 
     header h1 {
-      margin: 10px 0 5px;
-      font-size: 2.1rem;
+      margin: 0;
+      font-size: 1.8rem;
     }
 
     header p {
-      margin: 0;
-      font-size: 1.05rem;
+      margin: 4px 0 0;
+      font-size: 0.95rem;
       opacity: 0.9;
     }
 
     /* ===== Main ===== */
     main {
       max-width: 900px;
-      margin: 30px auto;
+      margin: 32px auto;
       padding: 0 20px;
     }
 
     section {
-      background-color: #ffffff;
-      padding: 24px;
-      border-radius: 14px;
+      background-color: white;
+      padding: 22px;
+      border-radius: 12px;
       margin-bottom: 24px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
     }
 
     section h2 {
       margin-top: 0;
       color: #2563eb;
-      border-left: 6px solid #2563eb;
-      padding-left: 12px;
+      border-left: 5px solid #2563eb;
+      padding-left: 10px;
     }
 
-    .info-list p {
-      margin: 8px 0;
+    .info p {
+      margin: 6px 0;
       font-size: 1.05rem;
     }
 
     /* ===== Footer ===== */
     footer {
       text-align: center;
-      padding: 25px 10px;
+      padding: 24px 10px;
       font-size: 0.9rem;
       color: #64748b;
     }
@@ -86,29 +90,27 @@
 <body>
 
 <header>
-  <!-- 小圓圈照片 -->
-  <img src="images/profile.jpg" alt="個人照片" class/p>
+  <img src="images/profile.jpg" alt="個人照片" class="avatar歷網站</p>
+  </div>
 </header>
 
 <main>
 
-  <section>
+  <section class="info">
     <h2>基本資料</h2>
-    <div class="info-list">
-      <p>👤 姓名：蘇祥霖</p>
-      <p>🎓 學校：亞洲大學</p>
-      <p>🆔 學號：AU114022110</p>
-      <p>📧 Email：johnnysu429@gmail.com</p>
-      <p>📍 居住地：新北市</p>
-    </div>
+    <p>👤 姓名：蘇祥霖</p>
+    <p>🎓 學校：亞洲大學</p>
+    <p>🆔 學號：AU114022110</p>
+    <p>📧 Email：johnnysu429@gmail.com</p>
+    <p>📍 居住地：新北市</p>
   </section>
 
   <section>
     <h2>自我介紹</h2>
     <p>
-      我是亞洲大學在學學生，對資訊科技與網頁設計有濃厚興趣。
-      目前學習 HTML 與 CSS，並透過實作方式累積實務經驗，
-      希望能逐步建立良好的程式基礎與解決問題的能力。
+      我是亞洲大學在學學生，對資訊科技與網頁設計有興趣。
+      目前學習 HTML 與 CSS，透過實作方式累積基礎能力，
+      希望能逐步建立良好的程式邏輯與問題解決能力。
     </p>
   </section>
 
