@@ -8,7 +8,7 @@
   <style>
     :root {
       --main-color: #2563eb;
-      --bg-color: #f8fafc;
+      --bg-color: #f1f5f9;
       --card-color: #ffffff;
       --text-color: #1f2937;
     }
@@ -22,32 +22,32 @@
       margin: 0;
       background-color: var(--bg-color);
       color: var(--text-color);
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     header {
-      background: linear-gradient(135deg, var(--main-color), #1e40af);
+      background: linear-gradient(135deg, #2563eb, #1e40af);
       color: white;
-      padding: 40px 20px;
       text-align: center;
+      padding: 50px 20px 40px;
     }
 
     .profile-photo {
-      width: 140px;
-      height: 140px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid rgba(255,255,255,0.85);
+      border: 4px solid #ffffff;
       margin-bottom: 15px;
     }
 
     header h1 {
-      margin: 0;
+      margin: 10px 0 5px;
       font-size: 2.2rem;
     }
 
     header p {
-      margin: 8px 0 0;
+      margin: 0;
       font-size: 1.1rem;
       opacity: 0.9;
     }
@@ -61,62 +61,30 @@
     section {
       background-color: var(--card-color);
       padding: 25px;
-      border-radius: 12px;
+      border-radius: 14px;
       margin-bottom: 25px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     }
 
     section h2 {
       margin-top: 0;
       color: var(--main-color);
-      border-left: 5px solid var(--main-color);
-      padding-left: 10px;
-    }
-
-    ul {
-      padding-left: 20px;
+      border-left: 6px solid var(--main-color);
+      padding-left: 12px;
     }
 
     .info-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 15px;
-    }
-
-    .skill {
-      margin-bottom: 15px;
-    }
-
-    .skill span {
-      font-weight: bold;
-    }
-
-    .progress-bar {
-      background-color: #e5e7eb;
-      border-radius: 20px;
-      overflow: hidden;
-      margin-top: 5px;
-    }
-
-    .progress {
-      height: 12px;
-      width: 0;
-      background-color: var(--main-color);
-      border-radius: 20px;
-      transition: width 1.5s ease;
+      font-size: 1.05rem;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      color: #6b7280;
+      color: #64748b;
       font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
     }
   </style>
 </head>
@@ -124,13 +92,15 @@
 <body>
 
 <header>
-  <img src="images/profile.jpg" alt="個人照片" class="profile-photoer>
+  <!-- 使用相對路徑，GitHub Pages 穩定 -->
+  <img src="./images/profile.jpg" alt="個人照片" class="profile</header>
 
 <main>
 
   <section>
     <h2>基本資料</h2>
     <div class="info-grid">
+      <div>🪪 姓名：蘇祥霖</div>  
       <div>🎓 學校：亞洲大學</div>
       <div>🆔 學號：AU114022110</div>
       <div>📧 Email：johnnysu429@gmail.com</div>
@@ -141,15 +111,16 @@
   <section>
     <h2>自我介紹</h2>
     <p>
-      我是亞洲大學在學學生，對於資訊科技與實務應用充滿興趣，
-      喜歡透過實作方式學習新技術，並持續提升自己的專業能力。
+      我是亞洲大學在學學生，對資訊科技與網頁設計有濃厚興趣。
+      目前正在學習 HTML 與 CSS，透過實作方式加深對前端技術的理解。
+      希望未來能持續精進技能，累積實務經驗，培養獨立解決問題的能力。
     </p>
   </section>
 
 </main>
 
 <footer>
-  © 2026 蘇祥霖｜個人履歷網站
+  © 2026 個人履歷網站｜所有權保留
 </footer>
 
 </body>
