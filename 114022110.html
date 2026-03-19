@@ -18,39 +18,44 @@
       line-height: 1.7;
     }
 
-    /* Header */
+    /* ===== Header ===== */
     header {
       background-color: #2563eb;
       color: white;
-      padding: 24px 20px;
+      padding: 20px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 16px;
+      gap: 14px;
     }
 
-    /* 非常小的圓形照片 */
-    .avatar {
-      width: 56px;
-      height: 56px;
+    /* ✅ 大頭照大小（非常小、固定） */
+    .avatar-wrap {
+      width: 48px;
+      height: 48px;
       border-radius: 50%;
-      object-fit: cover;
+      overflow: hidden;
       border: 2px solid white;
       flex-shrink: 0;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 1.7rem;
+    .avatar-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
-    header p {
+    .header-text h1 {
+      margin: 0;
+      font-size: 1.6rem;
+    }
+
+    .header-text p {
       margin: 2px 0 0;
       font-size: 0.9rem;
       opacity: 0.9;
     }
 
-    /* Main */
+    /* ===== Main ===== */
     main {
       max-width: 900px;
       margin: 32px auto;
@@ -58,7 +63,7 @@
     }
 
     section {
-      background-color: white;
+      background-color: #ffffff;
       padding: 22px;
       border-radius: 12px;
       margin-bottom: 24px;
@@ -77,7 +82,7 @@
       font-size: 1.05rem;
     }
 
-    /* Footer */
+    /* ===== Footer ===== */
     footer {
       text-align: center;
       padding: 24px 10px;
@@ -90,7 +95,9 @@
 <body>
 
 <header>
-  <img src="images/profile.jpg" class="霖</h1>
+  <div class="avatar-wrap">
+    <img src="images/profile.jpg" <div class="header-text">
+    <h1>蘇祥霖</h1>
     <p>個人履歷網站</p>
   </div>
 </header>
@@ -110,8 +117,8 @@
     <h2>自我介紹</h2>
     <p>
       我是亞洲大學在學學生，對資訊科技與網頁設計有興趣。
-      目前學習 HTML 與 CSS，透過實作方式建立基礎能力，
-      期望逐步累積經驗並提升解決問題的能力。
+      目前學習 HTML 與 CSS，透過實作方式累積基礎能力，
+      期望逐步建立良好的程式基礎與解決問題的能力。
     </p>
   </section>
 
