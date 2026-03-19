@@ -13,22 +13,22 @@
 
     body {
       margin: 0;
-      background-color: #f1f5f9;
+      background-color: #f4f6fb;
       color: #1f2937;
       line-height: 1.7;
     }
 
+    /* ===== Header ===== */
     header {
-      background-color: #2563eb;
+      background: linear-gradient(135deg, #2563eb, #1e40af);
       color: white;
+      padding: 40px 20px 30px;
       text-align: center;
-      padding: 40px 20px;
     }
 
-    /* ✅ 個人照片：固定大小，不再嚇人 */
-    .profile-photo {
-      width: 150px;
-      height: 150px;
+    .avatar {
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
       border: 4px solid white;
@@ -37,15 +37,16 @@
 
     header h1 {
       margin: 10px 0 5px;
-      font-size: 2.2rem;
+      font-size: 2.1rem;
     }
 
     header p {
       margin: 0;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       opacity: 0.9;
     }
 
+    /* ===== Main ===== */
     main {
       max-width: 900px;
       margin: 30px auto;
@@ -53,10 +54,10 @@
     }
 
     section {
-      background-color: white;
-      padding: 25px;
+      background-color: #ffffff;
+      padding: 24px;
       border-radius: 14px;
-      margin-bottom: 25px;
+      margin-bottom: 24px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     }
 
@@ -67,16 +68,17 @@
       padding-left: 12px;
     }
 
-    .info p {
+    .info-list p {
       margin: 8px 0;
       font-size: 1.05rem;
     }
 
+    /* ===== Footer ===== */
     footer {
       text-align: center;
-      padding: 20px;
-      color: #64748b;
+      padding: 25px 10px;
       font-size: 0.9rem;
+      color: #64748b;
     }
   </style>
 </head>
@@ -84,33 +86,36 @@
 <body>
 
 <header>
-  <!-- ✅ 唯一一張照片 -->
-  <img src="images/profile.jpg" alt="個人照片" class="履歷</p>
+  <!-- 小圓圈照片 -->
+  <img src="images/profile.jpg" alt="個人照片" class/p>
 </header>
 
 <main>
 
-  <section class="info">
+  <section>
     <h2>基本資料</h2>
-    <p>🎓 學校：亞洲大學</p>
-    <p>🆔 學號：AU114022110</p>
-    <p>📧 Email：johnnysu429@gmail.com</p>
-    <p>📍 居住地：新北市</p>
+    <div class="info-list">
+      <p>👤 姓名：蘇祥霖</p>
+      <p>🎓 學校：亞洲大學</p>
+      <p>🆔 學號：AU114022110</p>
+      <p>📧 Email：johnnysu429@gmail.com</p>
+      <p>📍 居住地：新北市</p>
+    </div>
   </section>
 
   <section>
     <h2>自我介紹</h2>
     <p>
-      我是亞洲大學在學學生，對資訊科技與網頁設計有興趣。
-      目前學習 HTML 與 CSS，並透過實作方式累積經驗，
-      希望未來能持續精進技術能力，培養獨立解決問題的能力。
+      我是亞洲大學在學學生，對資訊科技與網頁設計有濃厚興趣。
+      目前學習 HTML 與 CSS，並透過實作方式累積實務經驗，
+      希望能逐步建立良好的程式基礎與解決問題的能力。
     </p>
   </section>
 
 </main>
 
 <footer>
-  © 2026 蘇祥霖｜個人履歷網站
+  2026 個人履歷網站｜著作權保留
 </footer>
 
 </body>
