@@ -22,7 +22,13 @@
     header {
       background-color: #2563eb;
       color: white;
-      padding: 20px;
+      padding: 24px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-left {
       display: flex;
       align-items: center;
       gap: 16px;
@@ -30,8 +36,8 @@
 
     /* ✅ 大頭照（80x80，固定不失控） */
     .avatar-wrap {
-      width: 80px;
-      height: 80px;
+      width: 90px;
+      height: 90px;
       border-radius: 50%;
       overflow: hidden;
       border: 2px solid white;
@@ -55,6 +61,12 @@
       opacity: 0.9;
     }
 
+    .header-right {
+      text-align: right;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
     /* ===== Main ===== */
     main {
       max-width: 900px;
@@ -72,14 +84,55 @@
 
     section h2 {
       margin-top: 0;
+      margin-bottom: 16px;
       color: #2563eb;
       border-left: 5px solid #2563eb;
       padding-left: 10px;
+      font-size: 1.3rem;
     }
 
-    .info p {
-      margin: 6px 0;
+    /* ===== Skills ===== */
+    .skills {
+      display: flex;
+      gap: 16px;
+    }
+
+    .skill-box {
+      flex: 1;
+      border: 2px solid #f59e0b;
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .skill-box h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
       font-size: 1.05rem;
+    }
+
+    .skill-box ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    /* ===== Timeline ===== */
+    .timeline {
+      border-left: 3px solid #f59e0b;
+      padding-left: 20px;
+    }
+
+    .timeline-item {
+      margin-bottom: 24px;
+    }
+
+    .timeline-item .time {
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    .timeline-item .title {
+      font-weight: bold;
+      margin: 4px 0;
     }
 
     /* ===== Footer ===== */
@@ -95,31 +148,91 @@
 <body>
 
 <header>
-  <div class="avatar-wrap">
-    <img src="images/profile.jpg" alt="個lass="header-text">
-    <h1>蘇祥霖</h1>
-    <p>個人履歷網站</p>
+  <div class="header-left">
+    <div class="avatar-wrap">
+      <img src="images/me.jpg" alt="個人照片">
+    </div>
+    <div class="header-text">
+      <h1>蘇祥霖</h1>
+      <p>大一在學學生｜人工智慧學系</p>
+    </div>
+  </div>
+
+  <div class="header-right">
+    亞洲大學<br>
+    學號：AU114022110<br>
+    johnnysu429@gmail.com<br>
+    新北市
   </div>
 </header>
 
 <main>
 
-  <section class="info">
-    <h2>基本資料</h2>
-    <p>姓名：蘇祥霖</p>
-    <p>學校：亞洲大學</p>
-    <p>學號：AU114022110</p>
-    <p>Email：johnnysu429@gmail.com</p>
-    <p>居住地：新北市</p>
+  <section>
+    <h2>簡歷</h2>
+    <p>
+      目前為亞洲大學人工智慧學系在學學生，對資訊科技與網頁設計領域有高度興趣。
+      現階段以學習 HTML 與 CSS 為主，透過實作方式累積網頁結構與版面配置的基礎能力。
+    </p>
+    <p>
+      雖尚未具備實務或打工經驗，但對新技術與新工具保持高度學習動機，
+      期望在在學期間建立良好的程式設計思維與解決問題的能力。
+    </p>
   </section>
 
   <section>
-    <h2>自我介紹</h2>
-    <p>
-      我是亞洲大學在學學生，對資訊科技與網頁設計有興趣。
-      目前學習 HTML 與 CSS，透過實作方式累積基礎能力，
-      希望能逐步建立良好的程式邏輯與解決問題的能力。
-    </p>
+    <h2>專業技能</h2>
+    <div class="skills">
+      <div class="skill-box">
+        <h3>前端基礎</h3>
+        <ul>
+          <li>HTML 基本結構</li>
+          <li>CSS 樣式與排版</li>
+          <li>基礎切版練習</li>
+        </ul>
+      </div>
+
+      <div class="skill-box">
+        <h3>工具</h3>
+        <ul>
+          <li>Visual Studio Code</li>
+          <li>瀏覽器開發者工具</li>
+          <li>Git 基本操作</li>
+        </ul>
+      </div>
+
+      <div class="skill-box">
+        <h3>學習能力</h3>
+        <ul>
+          <li>查詢技術文件</li>
+          <li>線上課程自學</li>
+          <li>問題分析與修正</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>學習經歷</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="time">2025 / 09 – 至今</div>
+        <div class="title">大一在學學生｜亞洲大學</div>
+        <p>
+          修習人工智慧與資訊相關基礎課程，培養程式設計基礎與邏輯思考能力。
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="time">2025 / 10 – 至今</div>
+        <div class="title">個人履歷網站製作</div>
+        <p>
+          使用 HTML 與 CSS 規劃與製作個人履歷網站，練習網頁結構與樣式設計。
+        </p>
+      </div>
+
+    </div>
   </section>
 
 </main>
