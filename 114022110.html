@@ -19,7 +19,6 @@
       transition: background-color 0.3s, color 0.3s;
     }
 
-    /* ===== Header ===== */
     header {
       background-color: #2563eb;
       color: white;
@@ -29,6 +28,7 @@
       align-items: center;
       gap: 16px;
       flex-wrap: wrap;
+      gap: 16px;
     }
 
     .header-left {
@@ -58,7 +58,7 @@
     }
 
     .header-text p {
-      margin: 4px 0 0;
+      margin: 4px 0 8px;
       font-size: 0.95rem;
       opacity: 0.9;
     }
@@ -74,14 +74,19 @@
     }
 
     .header-buttons button {
-      margin-right: 8px;
+      margin-right: 6px;
       padding: 6px 12px;
       border: none;
       border-radius: 6px;
       cursor: pointer;
     }
 
-    /* ===== Main ===== */
+    .header-right {
+      text-align: right;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
     main {
       max-width: 900px;
       margin: 32px auto;
@@ -106,7 +111,7 @@
       font-size: 1.3rem;
     }
 
-    /* ===== Skills ===== */
+    /* Skills */
     .skills {
       display: flex;
       gap: 16px;
@@ -115,6 +120,7 @@
 
     .skill-box {
       flex: 1;
+      min-width: 220px;
       border: 2px solid #f59e0b;
       border-radius: 8px;
       padding: 16px;
@@ -140,11 +146,11 @@
       border-radius: 6px;
     }
 
-    .level.html { width: 80%; }
-    .level.css { width: 70%; }
-    .level.git { width: 60%; }
+    .html { width: 80%; }
+    .css  { width: 70%; }
+    .git  { width: 60%; }
 
-    /* ===== Timeline ===== */
+    /* Timeline */
     .timeline {
       border-left: 3px solid #f59e0b;
       padding-left: 20px;
@@ -154,17 +160,17 @@
       margin-bottom: 24px;
     }
 
-    .timeline-item .time {
+    .time {
       font-size: 0.9rem;
       color: #6b7280;
     }
 
-    .timeline-item .title {
+    .title {
       font-weight: bold;
       margin: 4px 0;
     }
 
-    /* ===== Dark Mode ===== */
+    /* Dark Mode */
     .dark {
       background-color: #111827;
       color: #f9fafb;
@@ -186,6 +192,7 @@
 
 <body>
 
+<!-- Background Music -->
 <audio id="bgm" loop>
   <source src="music/bgm.mp3" type="audio/mpeg">
 </audio>
@@ -199,8 +206,8 @@
       <h1>蘇祥霖</h1>
       <p>大一在學學生｜人工智慧學系</p>
       <div class="header-buttons">
-        <button onclick="toggleMusic()">🎵 播放音樂</button>
-        <button onclick="toggleTheme()">🌙 深色模式</button>
+        <button onclick="toggleMusic()">🎵 音樂</button>
+        <button onclick="toggleTheme()">🌙 深色</button>
       </div>
     </div>
   </div>
@@ -215,80 +222,78 @@
 
 <main>
 
-  <section>
-    <h2>專業摘要</h2>
-    <p>
-      我目前為亞洲大學人工智慧學系大一在學學生，
-      具備 HTML 與 CSS 的基礎網頁開發能力，
-      熟悉網頁結構規劃與基本版面配置。
-    </p>
-    <p>
-      對前端技術與資訊科技應用具有高度學習動機，
-      目前持續透過課程與實作專案累積經驗，
-      期望在在學期間建立良好程式設計基礎。
-    </p>
-  </section>
+<section>
+  <h2>專業摘要</h2>
+  <p>亞洲大學人工智慧學系大一在學學生，具備 HTML 與 CSS 基礎網頁開發能力，熟悉網頁結構與版面配置。</p>
+  <p>對資訊科技與前端技術具有高度學習動機，持續透過課程與實作累積經驗。</p>
+</section>
 
-  <section>
-    <h2>專業技能</h2>
-    <div class="skills">
+<section>
+  <h2>職涯目標</h2>
+  <p>希望結合人工智慧與資訊科技基礎，未來朝向軟體開發或資訊工程相關領域發展，逐步累積實務與實習經驗。</p>
+</section>
 
-      <div class="skill-box">
-        <h3>前端基礎</h3>
-        <div class="skill-bar">
-          HTML
-          <div class="bar"><div class="level html"></div></div>
-        </div>
-        <div class="skill-bar">
-          CSS
-          <div class="bar"><div class="level css"></div></div>
-        </div>
-      </div>
-
-      <div class="skill-box">
-        <h3>工具</h3>
-        <div class="skill-bar">
-          Git
-          <div class="bar"><div class="level git"></div></div>
-        </div>
-      </div>
-
-      <div class="skill-box">
-        <h3>學習能力</h3>
-        <ul>
-          <li>查詢技術文件</li>
-          <li>線上課程自學</li>
-          <li>問題分析與修正</li>
-        </ul>
-      </div>
+<section>
+  <h2>專業技能</h2>
+  <div class="skills">
+    <div class="skill-box">
+      <h3>前端技術</h3>
+      <div class="skill-bar">HTML<div class="bar"><div class="level html"></div></div></div>
+      <div class="skill-bar">CSS<div class="bar"><div class="level css"></div></div></div>
     </div>
-  </section>
-
-  <section>
-    <h2>學習與專案經歷</h2>
-    <div class="timeline">
-
-      <div class="timeline-item">
-        <div class="time">2025 / 09 – 至今</div>
-        <div class="title">人工智慧學系｜亞洲大學</div>
-        <p>
-          修習人工智慧與資訊相關基礎課程，
-          培養程式設計基礎與邏輯思考能力。
-        </p>
-      </div>
-
-      <div class="timeline-item">
-        <div class="time">2025 / 10 – 至今</div>
-        <div class="title">個人履歷網站開發</div>
-        <p>
-          使用 HTML 與 CSS 規劃並製作個人履歷網站，
-          練習版面配置、區塊化結構與樣式設計，
-          作為資訊與科技課程作品與個人學習成果展示。
-        </p>
-      </div>
-
+    <div class="skill-box">
+      <h3>工具</h3>
+      <div class="skill-bar">Git<div class="bar"><div class="level git"></div></div></div>
+      Visual Studio Code、瀏覽器開發者工具
     </div>
-  </section>
+  </div>
+</section>
+
+<section>
+  <h2>核心能力</h2>
+  <ul>
+    <li>邏輯思考與問題分析</li>
+    <li>主動學習與自我管理</li>
+    <li>基礎程式閱讀與修改能力</li>
+    <li>良好溝通與課堂協作能力</li>
+  </ul>
+</section>
+
+<section>
+  <h2>學習與專案經歷</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="time">2025 / 09 – 至今</div>
+      <div class="title">人工智慧學系｜亞洲大學</div>
+      <p>修習人工智慧與資訊相關基礎課程，培養程式設計與邏輯思考能力。</p>
+    </div>
+    <div class="timeline-item">
+      <div class="time">2025 / 10 – 至今</div>
+      <div class="title">個人履歷網站開發</div>
+      <p>使用 HTML、CSS 與 JavaScript 製作履歷網站，包含技能進度條、深色模式與背景音樂功能。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>相關修課內容</h2>
+  <ul>
+    <li>人工智慧導論</li>
+    <li>程式設計基礎</li>
+    <li>資訊科技與網頁設計</li>
+    <li>計算思維與邏輯訓練</li>
+  </ul>
+</section>
+
+<section>
+  <h2>語言與興趣</h2>
+  <ul>
+    <li>中文：母語</li>
+    <li>英文：基礎閱讀能力</li>
+    <li>學習新技術與程式語言</li>
+    <li>網頁設計與版面研究</li>
+  </ul>
+</section>
 
 </main>
 
